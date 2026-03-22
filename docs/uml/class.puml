@@ -1,0 +1,34 @@
+@startuml
+class User {
+  -userId: int
+  -firstName: String
+  -lastName: String
+  +doLogin(login: String, password: String): boolean
+  +doLogout(): void
+  +saveCookie(): void
+  +readCookie(): void
+}
+
+class Color {
+  -name: String
+  +addColor(name: String): void
+  +searchColor(name: String): String[]
+}
+
+class CookiesManager {
+  +saveCookie(user: User): void
+  +readCookie(): User
+}
+
+class ServerRequest {
+  +sendLoginRequest(payload: Object): Object
+  +sendAddColorRequest(payload: Object): Object
+  +sendSearchColorRequest(payload: Object): Object
+}
+
+' Relationships
+User "1" --> "0..*" Color : owns
+User ..> ServerRequest : uses
+Color ..> ServerRequest : uses
+User ..> CookiesManager : uses
+@enduml
