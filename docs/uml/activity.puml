@@ -1,0 +1,32 @@
+@startuml
+start
+
+while(Login Page)
+
+while (Enter Login Info) is (Invalid)
+  :Login Error;
+endwhile (Valid)
+  :Main Colors Page;
+
+while (Logged In?) is (Logged in)
+
+  switch (Choose Action)
+    case ()
+      :Add Color?;
+      :Color Added;
+
+    case ()
+      :Search Color?;
+      :Show Searched Color(s);
+
+    case ()
+      :Log Out;
+  endswitch
+
+endwhile (Logged Out)
+  :Log Out;
+
+endwhile (Exit Site)
+   :Leave Site;
+   stop;
+@enduml
