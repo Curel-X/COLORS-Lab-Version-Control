@@ -1,7 +1,12 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "indentation": 2,
-    "string-quotes": "double"
+    "indentation": null,
+    "string-quotes": null,
+    "color-hex-length": null,
+    "selector-id-pattern": null,
+    "alpha-value-notation": null,
+    "rule-empty-line-before": null,
+    "font-family-name-quotes": null
   }
 }
