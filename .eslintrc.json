@@ -4,8 +4,13 @@
     "es2021": true
   },
   "extends": "eslint:recommended",
-  "rules": {
-    "no-unused-vars": "warn",
-    "no-console": "off"
-  }
+  "overrides": [
+    {
+      "files": ["public/js/md5.js"],
+      "rules": {
+        "no-undef": "off",
+        "no-extra-semi": "off"
+      }
+    }
+  ]
 }
