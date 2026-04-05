@@ -4,6 +4,9 @@
     "es2021": true
   },
   "extends": "eslint:recommended",
+  "rules": {
+    "no-unused-vars": "warn"
+  },
   "overrides": [
     {
       "files": ["public/js/md5.js"],
