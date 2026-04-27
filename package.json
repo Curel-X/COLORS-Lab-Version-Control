@@ -6,11 +6,13 @@
     "lint:css": "stylelint \"public/css/**/*.css\"",
     "lint:html": "htmlhint \"public/*.html\"",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+    "test": "jest"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
     "stylelint": "^15.0.0",
     "stylelint-config-standard": "^34.0.0",
     "htmlhint": "^1.1.0"
+    "jest": "^29.0.0"
   }
 }
