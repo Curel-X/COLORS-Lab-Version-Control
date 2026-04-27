@@ -139,6 +139,15 @@ function addColor()
 	
 }
 
+function buildColorPayload(color, userId) {
+	return {
+		color: color,
+		userId: userId
+	};
+}
+
+module.exports = { buildColorPayload };
+
 function searchColor()
 {
 	let srch = document.getElementById("searchText").value;
