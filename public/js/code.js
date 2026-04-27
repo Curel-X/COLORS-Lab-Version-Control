@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const urlBase = 'http://jasoncop4331.online/';
 const extension = 'php';
 
